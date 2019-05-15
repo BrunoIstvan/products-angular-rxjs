@@ -1,0 +1,13 @@
+mat-card {
+    margin: 20px;
+    display: inline-block;
+}
+
+mat-form-field {
+    margin-right: 20px;
+}
+
+mat-chip {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}

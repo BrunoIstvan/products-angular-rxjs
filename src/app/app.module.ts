@@ -13,6 +13,9 @@ import { HttpGetRequestErrorComponent } from './views/http-get-request-error/htt
 import { HttpGetRequestLoadingComponent } from './views/http-get-request-loading/http-get-request-loading.component';
 import { HttpGetRequestIdsComponent } from './views/http-get-request-ids/http-get-request-ids.component';
 import { HttpPostRequestComponent } from './views/http-post-request/http-post-request.component';
+import { HttpDeleteRequestComponent } from './views/http-delete-request/http-delete-request.component';
+import { HttpPatchRequestComponent } from './views/http-patch-request/http-patch-request.component';
+import { DialogEditProductComponent } from './views/http-patch-request/dialog-edit-product/dialog-edit-product.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { HttpPostRequestComponent } from './views/http-post-request/http-post-re
     HttpGetRequestErrorComponent,
     HttpGetRequestLoadingComponent,
     HttpGetRequestIdsComponent,
-    HttpPostRequestComponent
+    HttpPostRequestComponent,
+    HttpDeleteRequestComponent,
+    HttpPatchRequestComponent,
+    DialogEditProductComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +37,9 @@ import { HttpPostRequestComponent } from './views/http-post-request/http-post-re
     MaterialModule,
     HttpClientModule,
     BrowserAnimationsModule
+  ],
+  entryComponents: [
+    DialogEditProductComponent
   ],
   providers: [
     ProductService

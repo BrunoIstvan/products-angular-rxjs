@@ -48,4 +48,16 @@ export class ProductService {
 
   }
 
+  deleteProduct(prod: Product) {
+
+    return this.http.delete(`${this.url}/products/${prod._id}`);
+
+  }
+
+  updateProduct(prod: Product) : Observable<Product> {
+
+    return this.http.patch<Product>(`${this.url}/products/${prod._id}`, prod);
+
+  }
+
 }
